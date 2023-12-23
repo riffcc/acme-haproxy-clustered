@@ -20,7 +20,7 @@ It's best used with clustered storage.
 DEPLOY_HAPROXY_HOT_UPDATE=yes \
     DEPLOY_HAPROXY_STATS_SOCKET=/var/run/haproxy/admin.sock \
     DEPLOY_HAPROXY_PEM_PATH=/etc/haproxy/certs \
-    DEPLOY_HAPROXY_REMOTE_MACHINES=haproxy_admin@haproxy01.riff.cc,haproxy_admin@haproxy02.riff.cc,haproxy_admin@haproxy03.riff.cc
+    DEPLOY_HAPROXY_REMOTE_MACHINES=haproxy_admin@haproxy01.riff.cc,haproxy_admin@haproxy02.riff.cc,haproxy_admin@haproxy03.riff.cc \
     acme.sh --deploy -d riff.cc -d *.riff.cc --deploy-hook haproxy_clustered
 ```
 
